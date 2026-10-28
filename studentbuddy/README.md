@@ -121,15 +121,16 @@ De verdeling is zo gekozen dat iedereen aan **een eigen pagina met eigen bestand
 ### Voorgestelde mappenstructuur
 ```
 studentbuddy/
-├── index.html          (Thor)
-├── css/style.css       (Thor, gedeeld)
+├── index.html          (Thor: startpagina en teampagina)
+├── style.css           (Thor, gedeeld door alle pagina's)
 ├── tips.html           (Thor)
-├── js/tips.js          (Thor)
 ├── taken.html          (Rawend)
-├── js/taken.js         (Rawend)
 ├── ontspanning.html    (David)
-├── js/oefeningen.js    (David)
-├── js/timer.js         (David)
+├── js/
+│   ├── tips.js         (Thor)
+│   ├── taken.js        (Rawend)
+│   ├── oefeningen.js   (David)
+│   └── timer.js        (David)
 └── README.md
 ```
 

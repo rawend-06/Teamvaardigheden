@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even tot rust komen | StudentBuddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero small">
+        <nav class="navbar">
+            <a class="logo" href="index.html">StudentBuddy</a>
+            <div class="nav-links"><a href="index.html">Start</a><a href="tips.html">Studietips</a><a href="taken.html">Takenlijst</a><a href="ontspanning.html" class="active">Ontspanning</a></div>
+        </nav>
+        <div class="hero-content">
+            <p class="eyebrow">03 · ONTSPANNING</p>
+            <h1>Even tot rust komen</h1>
+            <p>Kies een korte oefening en volg de stappen met de timer.</p>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="feature-grid two" id="oef"></div>
+            <div class="content-panel" id="detail" hidden style="margin:30px auto 0">
+                <h2 id="dTitel"></h2>
+                <p id="dBeschr"></p>
+                <ol class="steps" id="dStappen"></ol>
+                <div class="circle" id="circle" hidden></div>
+                <div class="timer" id="tijd" aria-live="off">00:00</div>
+                <div class="controls">
+                    <button class="btn" id="start">Start</button>
+                    <button class="btn ghost" id="pauze">Pauze</button>
+                    <button class="btn ghost" id="reset">Reset</button>
+                </div>
+                <p class="finished" id="klaar" role="status"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a class="logo footer-logo" href="index.html">StudentBuddy</a>
+        <p>Team Big-5 · Simulatieproject 2026</p>
+    </footer>
+    <script src="js/timer.js"></script>
+    <script src="js/oefeningen.js"></script>
+</body>
+</html>

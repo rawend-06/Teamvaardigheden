@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hou overzicht | StudentBuddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero small">
+        <nav class="navbar">
+            <a class="logo" href="index.html">StudentBuddy</a>
+            <div class="nav-links"><a href="index.html">Start</a><a href="tips.html">Studietips</a><a href="taken.html" class="active">Takenlijst</a><a href="ontspanning.html">Ontspanning</a></div>
+        </nav>
+        <div class="hero-content">
+            <p class="eyebrow">02 · TAKENLIJST</p>
+            <h1>Hou overzicht</h1>
+            <p>Voeg taken toe, vink ze af en zie meteen wat er nog open staat. Alles blijft bewaard in je browser.</p>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="task-form">
+                <input type="text" id="nieuw" placeholder="Wat moet je nog doen?" maxlength="120" aria-label="Nieuwe taak">
+                <button class="btn" id="add">Toevoegen</button>
+            </div>
+            <p class="error" id="err" role="alert"></p>
+            <div class="filters" role="group" aria-label="Filter taken">
+                <button class="chip active" data-f="alle">Alle</button>
+                <button class="chip" data-f="open">Open</button>
+                <button class="chip" data-f="klaar">Afgewerkt</button>
+            </div>
+            <p class="count" id="teller" aria-live="polite"></p>
+            <ul class="task-list" id="lijst"></ul>
+        </section>
+    </main>
+    <footer>
+        <a class="logo footer-logo" href="index.html">StudentBuddy</a>
+        <p>Team Big-5 · Simulatieproject 2026</p>
+    </footer>
+    <script src="js/taken.js"></script>
+</body>
+</html>
